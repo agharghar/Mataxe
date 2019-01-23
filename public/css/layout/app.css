@@ -1,0 +1,286 @@
+Start Global Declaration*/
+
+
+@font-face {
+  font-family: palanquin;
+  src: url('../font/palanquin/palanquin-regular.ttf');
+  font-size: 18px;
+}
+
+:root{
+
+--mainColor : #173F5F ; 
+--secoundColor : #5e9bfc;
+--thirdColor : #EEEEEE;
+
+--mainFont : palanquin;
+
+}
+
+
+
+
+
+p,h1,h2,h3,h4,ul{
+	font-family: var(--palanquin) !important; 
+}
+
+
+
+/*End Global Declaration*/
+
+
+
+
+/*Start NavBar*/
+
+.navbar{
+
+	padding: 0px; 
+}
+
+nav{
+
+	background-color:var(--mainColor) ;	 
+	z-index: 2;
+	box-shadow: 0 0 50px 0 ; 
+}
+
+
+nav .container a  {
+	font-size: 18px ; 
+	font-weight : 600;
+}
+
+
+nav .container .navbar-brand {
+	font-size: 22px;
+	font-weight: bolder;
+	padding: 15px 6px;
+	color: var(--thirdColor);
+	transition: color .3s ease ; 
+}
+
+nav .container .navbar-brand:hover{
+	color: var(--secoundColor);
+	text-shadow: 4px 4px 3px rgb(0, 0, 0,0.5) ; 
+}
+
+nav .nav-item{
+	padding: 8px;
+	-webkit-transition: all .6s ease ;
+	-moz-transition: all .6s ease ;
+	-o-transition: all .6s ease ;
+	transition: all .6s ease ;
+ 
+
+}
+
+nav li{
+	text-transform: capitalize;
+	border-bottom : 3px solid transparent;
+}
+
+
+
+nav .container li:hover:not(.active)  {
+	border-bottom : 3px solid var(--secoundColor);
+	cursor: pointer;
+	text-shadow: 4px 4px 3px rgb(0, 0, 0,0.5) ; 
+	
+
+}
+
+nav .container li:hover:not(.active) a {
+	color: var(--secoundColor) ; 
+	cursor: pointer;
+
+}
+
+
+
+
+nav .container li.active:hover , nav .container li.active a:hover{
+	background-color: initial;
+
+}
+
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link{
+	-webkit-transition: all .6s ease ;
+	-moz-transition: all .6s ease ;
+	-o-transition: all .6s ease ;
+	transition: all .6s ease ;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:hover{
+	color: var(--secoundColor);
+
+}
+
+
+/*End NavBar*/
+
+
+
+/*Start Footer */
+
+
+/*Stat Form*/
+	footer{
+		font-family: var(--mainFont);
+
+	}
+
+	footer .myform{
+
+		transition: all 0.5 ease ; 
+	}
+
+	footer .myform textarea {
+		resize: none;
+	}
+	footer .myform .form-label {
+		font-size: 12px;
+		color: var(--mainColor);
+		margin: 0;
+		display: block;
+		opacity: 1;
+		-webkit-transition: .333s ease top, .333s ease opacity;
+		transition: .333s ease top, .333s ease opacity;
+	}
+	footer .myform .form-control {
+		border-radius: 0;
+		border-color: #ccc;
+	   	border-width: 0 0 2px 0;
+	   	border-style: none none solid none;
+	   	box-shadow: none;
+	}
+	footer .myform .form-control:focus {
+		box-shadow: none;
+		border-color: var(--mainColor);
+	}
+	footer .myform .js-hide-label {
+		opacity: 0; 	
+	}
+	footer .myform .js-unhighlight-label {
+		color: #999 
+	}
+	footer .myform .btn-start-order {
+		background: 0 0 #ffffff;
+	    border: 1px solid #2f323a;
+	    border-radius: 3px;
+	    color: #2f323a;
+	    font-family: "Raleway", sans-serif;
+	    font-size: 16px;
+	    line-height: inherit;
+	    margin: 30px 0;
+	    padding: 10px 50px;
+	    text-transform: uppercase;
+	    transition: all 0.25s ease 0s;
+	    transition: background-color 1s ease 0s , color 1s ease 0s;
+	}
+	footer .myform .btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
+/*		border-color: var(--mainColor);
+		color: var(--mainColor);*/
+		background-color: var(--mainColor );
+		color: white;
+	}
+
+
+/*End  Form*/
+
+
+/*Start Contact*/
+
+	footer .row i{
+		font-size: 40px ;
+		transition: all .8 ease;
+	}
+
+	footer .row i:hover{
+		color: var(--mainColor);
+	}
+
+	footer .row label{
+		padding-top: 3px;
+		font-weight: 400;
+		font-size: 22px;
+	}
+
+
+	footer .row label span {
+		color: var(--mainColor);
+		font-weight: bold;
+	}
+
+
+/*End Contact*/
+
+/*Start copyWrite*/
+
+footer .copyWrite{
+	background : var(--mainColor);
+	font-weight: bold;
+	font-size: 15px ;
+	word-spacing: 3px;
+	color: #0A0A0A;
+
+}
+
+footer .copyWrite i{
+	color: inherit; ; 
+	transition: all 0.8 ease ; 
+	font-size: 15px;
+}
+
+footer .copyWrite i:hover{
+	color: inherit;
+}
+
+
+
+/*End copyWrite*/
+
+/*End Footer*/ 
+
+
+
+/*Start Scroll to Top*/
+
+#buttonTop {
+
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  visibility: hidden ; 
+  display: none;
+  transition: all 1s ease ; 
+  z-index: 99;
+}
+
+#buttonTop.show {
+  opacity: .6;
+  visibility: initial ; 
+    display: inline-block;
+  
+
+
+}
+
+#buttonTop:hover , #buttonTop:active {
+  cursor: pointer;
+  opacity: 0.8 ;
+
+}
+#buttonTop .fas{
+	font-size: 50px;
+}
+
+
+
+
+/*End Scroll to Top

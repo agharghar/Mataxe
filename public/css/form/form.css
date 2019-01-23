@@ -1,0 +1,136 @@
+*{
+	font-family: var(--mainFont);
+	text-transform: capitalize;
+}
+
+/*Start Section Form*/
+
+section.form{
+	transition: all 0.8 ease;
+	background : var(--thirdColor);
+}
+	
+section.form div h1{
+	color: var(--mainColor) ; 
+	font-weight: bold;
+	font-size: 50px;
+}
+
+section.form >div.row{ 
+	border : none;
+	border-bottom: 2px solid var(--mainColor);
+}
+
+section.form div label{
+	font-weight: 700;
+	font-size: 18px;
+}
+
+section.form form input{
+	border : none;
+	border-bottom: 2px solid var(--secoundColor);
+	border-radius: unset;
+	background : var(--thirdColor);
+}
+
+section.form form input:focus{
+	background : var(--thirdColor);
+	border : none;
+}
+
+section.form form label.custom-control-label{
+	
+	color: var(--mainColor);
+	font-weight: bolder;
+}
+
+section.form form label.custom-control-label:hover , section.form form input[type="checkbox"]:hover{
+	cursor: pointer;
+}
+
+
+section.form form input[type="file"]:hover ,section.form form .custom-file label[for="file"]:hover {
+	cursor: pointer;
+}
+
+section.form form .custom-file label[for="file"]{
+	background : var(--thirdColor);
+	border : none;
+	border-bottom: 2px solid var(--secoundColor);
+}
+
+
+section.form form input[type='submit']{
+	border-width: 50% ;
+	color: inherit;
+    font-size: 20px;
+    font-weight: bold;
+
+	transition : all 0.5s ease;
+}
+
+section.form form input[type='submit']:hover{
+	background : var(--mainColor);
+	color: white;
+	border-radius: 3px;
+	border: 1px solid #2f323a;
+}
+
+
+
+
+
+
+/*End Section Form*/
+
+
+/*Start From*/
+
+
+
+
+form label{
+	font-size: 16px ; 
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/*End From*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
